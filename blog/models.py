@@ -34,6 +34,7 @@ class Post(models.Model):
             args=[self.publish.year,
             self.publish.month,
             self.publish.day, self.slug])
+    
     objects = models.Manager() # The default manager.
     published = PublishedManager() # Our custom manager
     
